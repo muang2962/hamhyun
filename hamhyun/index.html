@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>HAMHYUN - made by muel</title>
+  <link rel="icon" type="image/png" sizes="1080×1080" href="/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>1학년 10반반</h1>
+
+  <div class="controls">
+    <button id="loadHistoryBtn">이전 자리 기록 불러오기</button>
+    <button id="assignBtn" disabled>자리 배정</button>
+    <a id="downloadLink" download="seating_history.txt">📥 새 기록 다운로드</a>
+    <input type="file" id="historyFile" accept=".txt" />
+  </div>
+
+  <div class="seat-grid" id="seatContainer">
+    <div class="desk">📚 교탁</div>
+  </div>
+
+  <div id="countdownOverlay" class="countdown-overlay">
+    <a></a>
+  </div>
+
+  <div class="footer-text">made by muel</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
